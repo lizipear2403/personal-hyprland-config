@@ -1,0 +1,51 @@
+{
+  "hyprland/workspaces": {
+    "format": "{icon} {windows}",
+    "persistent-workspaces": {
+      "eDP-1": 4,
+    },
+    "window-rewrite-default": "󰊠",
+    "window-rewrite": {
+      // --- Work ---
+      "kitty": "",
+      "vivaldi": "",
+      "nvim": "",
+      "obsidian": "󰹕",
+      // --- Apps ---
+      "discord": "",
+      "org.kde.kdeconnect.app": "󰦉",
+      "org.qbittorrent.qBittorrent": "󰘿",
+      // --- Graphics & Visual ---
+      "xdg-desktop-portal-gtk": "",
+      "thunar": "",
+      "yazi": "󰇥",
+      "imv": "󰄄",
+      "swappy": "󰄄",
+      "org.gnome.FileRoller": "",
+      "vlc": "󰕼",
+      "mpv": "󰕼",
+      // --- System ---
+      "blueman-manager": "",
+      "pavucontrol": "󱕂",
+      "nm-connection-editor": "󰐻",
+      // --- Tool ---
+      "nwg-look": "󰒓",
+      "qt5ct": "󰒓",
+      "qt6ct": "󰒓",
+      "designer": "󰒓",
+      "linguist": "󰒓",
+      "assistant": "󰒓",
+      "pixeltool": "󰒓",
+      "qdbusviewer": "󰒓",
+    },
+    "format-icons": {
+      "active": "󰮯",
+      "special": "󱁂",
+      "default": "󰊠",
+      "urgent": "󰧵",
+      "empty": "",
+    },
+    "show-special": false,
+    "all-outputs": true,
+  },
+}

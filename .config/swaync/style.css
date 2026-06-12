@@ -1,0 +1,211 @@
+/* ~/.config/swaync/style.css */
+
+* {
+    font-family: "Noto Sans CJK SC", "Hack Nerd Font", sans-serif;
+    font-size: 13px;
+}
+
+.notification-row {
+    outline: none;
+    margin: 0;
+    padding: 0;
+}
+
+.notification-row:focus,
+.notification-row:hover {
+    background: none;
+}
+
+.notification {
+    border-radius: 12px;
+    margin: 8px 12px;
+    padding: 0;
+    background: rgba(30, 30, 46, 0.95);
+    border: 1px solid rgba(255, 255, 255, 0.08);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+}
+
+.notification-content {
+    padding: 12px;
+}
+
+/* 通知标题 */
+.summary {
+    font-weight: 700;
+    color: #cdd6f4;
+    font-size: 14px;
+}
+
+/* 通知正文 */
+.body {
+    color: #bac2de;
+    font-size: 13px;
+}
+
+/* 应用图标 */
+.notification-default-action {
+    margin: 0;
+    padding: 0;
+    border-radius: 12px;
+    background: transparent;
+}
+
+/* 内联回复区域 */
+.inline-reply {
+    margin-top: 8px;
+}
+
+.inline-reply-entry {
+    background: rgba(0, 0, 0, 0.3);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    border-radius: 8px;
+    color: #cdd6f4;
+    padding: 6px 10px;
+}
+
+/* ===================== */
+/* 通知中心面板           */
+/* ===================== */
+
+.control-center {
+    background: rgba(24, 24, 37, 0.97);
+    border: 1px solid rgba(255, 255, 255, 0.06);
+    border-radius: 16px;
+    margin: 8px;
+    padding: 12px;
+    min-width: 360px;
+    max-width: 420px;
+}
+
+/* 标题栏 */
+.widget-title {
+    margin: 0 0 8px 0;
+    font-size: 16px;
+    font-weight: 700;
+    color: #cdd6f4;
+}
+
+.widget-title button {
+    background: rgba(255, 255, 255, 0.06);
+    border: none;
+    border-radius: 8px;
+    padding: 4px 12px;
+    color: #cdd6f4;
+}
+
+.widget-title button:hover {
+    background: rgba(255, 255, 255, 0.12);
+}
+
+/* 勿扰模式 */
+.widget-dnd {
+    margin: 4px 0;
+    background: rgba(255, 255, 255, 0.04);
+    border-radius: 10px;
+    padding: 6px 12px;
+}
+
+.widget-dnd > span {
+    font-size: 13px;
+    color: #a6adc8;
+}
+
+.widget-dnd > switch {
+    margin-left: auto;
+}
+
+/* MPRIS 媒体控制 */
+.widget-mpris {
+    background: rgba(255, 255, 255, 0.04);
+    border-radius: 12px;
+    padding: 8px;
+    margin: 4px 0;
+}
+
+.widget-mpris-player {
+    padding: 4px;
+}
+
+.widget-mpris-title {
+    font-weight: 700;
+    font-size: 14px;
+    color: #cdd6f4;
+}
+
+.widget-mpris-subtitle {
+    font-size: 12px;
+    color: #a6adc8;
+}
+
+/* 音量/亮度滑块 */
+.widget-volume,
+.widget-backlight {
+    margin: 4px 0;
+    padding: 4px 8px;
+    background: none;
+    border-radius: 10px;
+}
+
+.widget-volume > label,
+.widget-backlight > label {
+    font-size: 13px;
+    color: #cdd6f4;
+    min-width: 40px;
+}
+
+.widget-volume slider,
+.widget-backlight slider {
+    min-height: 4px;
+    min-width: 80px;
+    background: rgba(255, 255, 255, 0.15);
+    border-radius: 4px;
+}
+
+.widget-volume trough,
+.widget-backlight trough {
+    min-height: 4px;
+    border-radius: 4px;
+    background: rgba(255, 255, 255, 0.08);
+}
+
+.widget-volume highlight,
+.widget-backlight highlight {
+    background: #89b4fa;
+    border-radius: 4px;
+}
+
+/* 按钮网格 */
+.widget-buttons-grid {
+    margin: 4px 0;
+}
+
+.widget-buttons-grid > flowbox > flowboxchild > button {
+    background: rgba(255, 255, 255, 0.06);
+    border: none;
+    border-radius: 10px;
+    padding: 8px;
+    margin: 2px;
+    min-width: 60px;
+    font-size: 13px;
+    color: #cdd6f4;
+}
+
+.widget-buttons-grid > flowbox > flowboxchild > button:hover {
+    background: rgba(255, 255, 255, 0.12);
+}
+
+/* 通知列表 */
+.widget-notifications {
+    margin: 0;
+}
+
+.widget-notifications > .notification {
+    margin: 4px 0;
+}
+
+/* 占位文本（无通知时） */
+.empty-placeholder {
+    color: #585b70;
+    font-size: 13px;
+    padding: 20px;
+}

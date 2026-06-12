@@ -1,0 +1,32 @@
+[pyprland]
+plugins = [
+    "scratchpads",
+    "expose",
+    "magnify",
+    "layout_center",
+    "shift_monitors",
+    "toggle_dpms",
+    "system_notifier",
+    "monitors",
+]
+[scratchpads.terminal]
+command = "kitty --class kitty-dropterm"
+class = "kitty-dropterm"         
+size = "75% 60%"           
+animation = "fromTop"    
+margin = 50             
+max_size = "1920px 100%"  
+lazy = true              
+multi = false           
+unfocus = "hide"       
+pinned = true         
+[magnify]
+factor = 2.0      
+duration = 8 
+[layout_center]
+margin = 60
+style = ["opacity 1", "bordercolor rgb(FFFF00)"]
+next = "movefocus r"
+prev = "movefocus l"
+next2 = "movefocus d"
+prev2 = "movefocus u"

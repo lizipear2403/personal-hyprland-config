@@ -1,0 +1,39 @@
+[mgr]
+"$schema" = "https://yazi-rs.github.io/schemas/yazi.json"
+ratio          = [ 2, 4, 3 ]   # [父目录, 当前目录, 预览区] 宽度比
+sort_by        = "mtime"      # alphabetical / natural / modified / created / extension / size / none
+sort_sensitive = false          # 大小写敏感排序
+sort_reverse   = false
+sort_dir_first = true           # 目录排在文件前
+sort_translit  = false          # 音译排序（中日韩字符转拉丁）
+linemode       = "none"         # none / permissions / size / mtime / mime
+show_hidden    = false          # 默认隐藏，按 . 切换
+show_symlink   = true           # 显示符号链接目标
+scrolloff      = 5              # 滚动时上下保留的行数
+mouse_events   = [ "click", "scroll" ]  # 鼠标事件
+title_format   = "Yazi: {cwd}"          # 终端标题格式
+[preview]
+wrap            = "no"          # no / yes / 字符数阈值（代码预览建议不换行）
+tab_size        = 4
+max_width       = 600
+max_height      = 900
+cache_dir       = ""            # 留空使用默认缓存目录
+image_delay     = 30            # 0-100，图像解码延迟，值越低越快
+image_filter    = "lanczos"    # triangle(快) / lanczos(质量高但慢)
+image_quality   = 75            # 50-90
+ueberzug_scale  = 1             # Überzug 缩放（很少用到）
+ueberzug_offset = [ 0, 0, 0, 0 ]
+[opener]
+edit = [
+    { run = "nvim %s",          desc = "Neovim",    for = "unix", block = true },
+    { run = "zeditor -a %s",          desc = "Zed",   for = "unix", orphan = true },
+]
+open = [
+    { run = "xdg-open %s1",     desc = "Default",   for = "linux" },
+]
+reveal = [
+    { run = "dolphin --select %s", desc = "Dolphin",  for = "linux" },
+]
+extract = [
+    { run = "ya pub extract --list %s", desc = "Extract here" },
+]
